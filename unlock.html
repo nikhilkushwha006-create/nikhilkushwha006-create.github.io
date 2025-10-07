@@ -1,14 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-<title>Unlocking...</title>
-<script>
-  window.onload = function() {
-    window.location = "spotifyABX://unlock?status=true";
-  }
-</script>
-</head>
-<body>
-<p>If you are not redirected automatically, <a href="spotifyABX://unlock?status=true">click here</a>.</p>
-</body>
+  <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Unlock</title>
+    <style>
+      body{font-family:Arial;text-align:center;padding:40px}
+      .card{display:inline-block;padding:18px;border-radius:8px;border:1px solid #ccc}
+      button{padding:10px 18px;margin-top:12px}
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h2>LOCKED</h2>
+      <p>Follow the link once in 24 hours and enjoy ad-free music whole day!!</p>
+      <button onclick="window.location='spotifyABX://unlock?status=true'">Open in App to Unlock</button>
+    </div>
+  </body>
 </html>
